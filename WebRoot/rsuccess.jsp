@@ -1,0 +1,28 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>登录/注册成功</title>
+	</head>
+  
+	<body>
+    	<%
+    		if(request.getSession().getAttribute("loginUser")!=null){
+    	
+    	 %>
+    			恭喜你，<s:property value="lname"/>，登录成功!<p>
+    			<form method="post" action="logout.jsp">
+    				<input type="submit" value="退出登录"/>
+    			</form>
+    	 <%
+    		}else if(request.getSession().getAttribute("rname")!=null){
+    	 %>
+    	 		恭喜你，<s:property value="rname"/>，注册成功!
+    	 <%
+    	 	}
+    	 	
+    	 %>
+	</body>
+</html>

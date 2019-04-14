@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+    "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+ <struts>
+  	<package name="default" extends="struts-default">
+ 		<!-- 登录Action -->
+ 		<action name="loginAction" class="action.LoginAction">
+ 			<result name="success">/success.jsp</result>
+ 			<result name="input">/login.jsp</result>
+ 		</action>
+ 		
+ 		<!-- 注册登录Action配置一 
+ 		<action name="regLogAction" class="action.RegLogAction">
+ 			<result name="success">/rsuccess.jsp</result>
+ 			<result name="input">/reglogin.jsp</result>
+ 		</action>
+ 		-->
+ 		
+ 		<!-- 注册登录Action配置二 -->
+  		<action name="logAction" class="action.RegLogAction" method="login">
+ 			<result name="success">/rsuccess.jsp</result>
+ 			<result name="input">/reglogin.jsp</result>
+ 		</action>
+ 		
+ 		<action name="regAction" class="action.RegLogAction" method="register">
+ 			<result name="success">/rsuccess.jsp</result>
+ 			<result name="input">/reglogin.jsp</result>
+ 		</action> 
+ 	</package>
+ </struts>
