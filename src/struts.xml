@@ -6,7 +6,7 @@
   	<package name="default" extends="struts-default">
  		<!-- 登录Action -->
  		<action name="loginAction" class="action.LoginAction">
- 			<result name="success">/success.jsp</result>
+ 			<result name="success">/rsuccess.jsp</result>
  			<result name="input">/login.jsp</result>
  		</action>
  		
@@ -26,6 +26,11 @@
  		<action name="regAction" class="action.RegLogAction" method="register">
  			<result name="success">/rsuccess.jsp</result>
  			<result name="input">/reglogin.jsp</result>
+ 			
+ 		</action> 
+ 		 		<action name="TrainQueryAction" class="action.TrainQueryAction" method="execute">
+ 			<result name="success">/rsuccess.jsp</result>
+ 			<result name="input">/fail.jsp</result>
  		</action> 
  	</package>
  </struts>

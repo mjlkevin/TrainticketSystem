@@ -13,7 +13,7 @@ public class DBCon {
 //			characterEncoding=utf-8serverTimezone=GMT
 			String url="jdbc:mysql://localhost:3306/trainticketsystem?characterEncoding=utf-8&serverTimezone=GMT";
 			String username="root";
-			String password="Mjlkevin121133@";
+			String password="Mjlkevin121133";
 		
             Connection conn = DriverManager.getConnection(url,username,password);
             return conn;
@@ -58,6 +58,7 @@ public class DBCon {
 			stmt=conn.createStatement();
 			String sql="select * from accountinfo where uname='"+name+"' and upassword='"+password+"'";
 			ResultSet rs=stmt.executeQuery(sql);
+			System.out.println(rs);
 			if(rs.next()){
 				return true;
 			}else{
@@ -90,25 +91,38 @@ public class DBCon {
 			return false;
 		}
 	}
+
 	//车次查询的方法
-	public static boolean TrainQuery(){
+	public static ResultSet TrainQuery(Train train){
 		Connection conn=JDBCon();
 		Statement stmt=null;
+		//确定数据库表
+        String station =train.getDepStation();
+        
+         if(station.equals("中山")) {
+        	station = "zs_traininfo";
+        	}else if(station.equals("唐家湾")){
+        	station = "tjw_traininfo";	
+        	}else if(station.equals("珠海")){
+            station = "zh_traininfo";	
+            }else if(station.equals("广州南")){
+            station = "gzn_traininfo";
+            }
+        System.out.println("table:"+"\t"+station);
+        System.out.println("trainnumber"+"\t"+"ArrivalTime"+"\t"+"LeaveTime");
+            
 		try{
 			stmt=conn.createStatement();
-			
-			String sql="select * from trainnumberinfo('"+person.getName()+"','"+person.getPassword()+"','"+
-			            person.getSex()+"',"+person.getAge()+",'"+person.getEmail()+"')";
-			int r=stmt.executeUpdate(sql);
-			if(r>0){
-				return true;
-			}else{
-				return false;
-			}
+	        //sql查询语句
+			String sql="select * from "+station;
+			//执行查询，把查询结果赋值给结果集对象
+			ResultSet rs = stmt.executeQuery(sql);
+
+			return rs;
 		}catch(SQLException ex){
 			System.out.println("数据库访问失败!");
 			ex.printStackTrace();
-			return false;
+			return null;
 		}
 	}
 }

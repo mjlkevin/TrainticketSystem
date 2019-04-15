@@ -4,19 +4,23 @@ public class Train {
 	private String TrainNumber;
 	private String depStation;
 	private String TerStation;
-	private String PasStation;
-	private String depTime;
 	private String ArrTime;
+	private String LeaveTime;
 	public Train(){
 		
 	}
-	public Train(String TrainNumber,String depStation,String TerStation,String PasStation,String depTime,String ArrTime){
+	public Train(String TrainNumber,String depStation,String TerStation,String ArrTime,String LeaveTime){
 		this.TrainNumber=TrainNumber;
 		this.depStation=depStation;
 		this.TerStation=TerStation;
-		this.PasStation=PasStation;
-		this.depTime=depTime;
 		this.ArrTime=ArrTime;
+		this.LeaveTime = LeaveTime;
+	}
+	public String getLeaveTime() {
+		return LeaveTime;
+	}
+	public void setLeaveTime(String leaveTime) {
+		LeaveTime = leaveTime;
 	}
 	public String getTrainNumber() {
 		return TrainNumber;
@@ -35,18 +39,6 @@ public class Train {
 	}
 	public void setTerStation(String terStation) {
 		TerStation = terStation;
-	}
-	public String getPasStation() {
-		return PasStation;
-	}
-	public void setPasStation(String pasStation) {
-		PasStation = pasStation;
-	}
-	public String getDepTime() {
-		return depTime;
-	}
-	public void setDepTime(String depTime) {
-		this.depTime = depTime;
 	}
 	public String getArrTime() {
 		return ArrTime;
