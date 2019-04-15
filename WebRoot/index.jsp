@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -48,32 +49,36 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </div>
 <!-- 查询框 -->
 <div class="search">
+	<form action="TrainQueryAction">
     <ul>
         <li>
             <div class="ui-widget">
-            <label>始发地</label>
-            <input id="tags" type="text" name="departure" >
+            <span>
+            <label>出发地</label>
+            </span>
+            <input id="tags" type="text" name="depStation" >
             </div>
         </li>
         <li>
+       
             <span>
                 <label>目的地</label>
             </span>
-            <input type="text" name="destination">
+            <input id="tags" type="text" name="TerStation">
         </li>
         <li>
             <span>
-                <label>日期</label>
-                <input id="datepicker" type="text" name="date">
+                <label>出发日期</label>
+                <input id="datepicker" type="text" name="depDate">
             </span>
         </li>
     </ul>
     <span class="search_btn">
-        <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
+        <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" ">
             <span class="ui-button-text">Submit</span>
         </button>
     </span>
-
+ </form>
 </div>
 <!-- 查询结果表格 -->
 <div class="table" id="customers">

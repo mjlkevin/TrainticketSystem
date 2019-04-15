@@ -172,7 +172,6 @@ input[type="password"],
 textarea,
 .uneditable-input{
   width: 210px;
-  height: 18px;
 }
 
 #toolbar {

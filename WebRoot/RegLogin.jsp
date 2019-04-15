@@ -67,25 +67,26 @@
             </div>
             <!--登录与注册框-->
         <div class="loginFrame">
-            <form action="">
+            <form action="loginAction">
                 <table>
-                    <tr >
+                    <tr>
                         <td><img src="images/userName.png" alt="" id="icon_username"><b>用户名</b></td>
-                        <td><input class="text userName" type="text" name="userName" placeholder="Please input your username"></td>
+                        <td><input class="text userName" type="text" name="name" placeholder="Please input your username"></td>
                         <td id="1"></td>
                     </tr>
                     <tr>
                         <td><img src="images/psw.png" alt=""><b>密码</b></td>
-                        <td><input class="text passWord" type="password" name="userPsw" placeholder="Please input your username"></td>
+                        <td><input class="text passWord" type="password" name="password" placeholder="Please input your password"></td>
                         <td id="2"></td>
                     </tr>
                 </table>
+                <input type="submit" value="submit">
                 <span class="submitBtn">登录</span>
             </form>
 
         </div>
         <div class="registerFrame">
-            <form action="">
+            <form action="RegLogAction">
                 <table>
                     <tr>
                         <td><strong class='high' style="color:red">*</strong><img src="images/userName.png" alt="" id="icon_01"><b>用户名</b></td>
