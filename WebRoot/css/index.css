@@ -135,9 +135,36 @@ body{
     text-align: center;
     margin-left: auto;
     margin-right:auto;
-
     table-layout: fixed;
+}
+/*美化表格*/
+#customers
+{
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse:collapse;
+}
+
+#customers td, #customers th
+{
+    font-size:1em;
+    border:1px solid #3195d3;
+    padding:3px 7px 2px 7px;
+}
+
+#customers th
+{
+    font-size:1.1em;
+    text-align:left;
+    padding-top:5px;
+    padding-bottom:4px;
+    background-color: #3195d3;
+    color:#ffffff;
+}
+
+#customers tr.alt td
+{
+    color:#000000;
+    background-color: #34afd3;
 }
 .th>th{
     height: 50px;
@@ -163,9 +190,5 @@ body{
     height: 80px;
     bottom: 0;
     background-color: #3c3f41;
-}
-html.body{
-    width: 100%;
-    height: 100%;
 }
 

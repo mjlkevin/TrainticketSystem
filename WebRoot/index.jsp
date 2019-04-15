@@ -8,19 +8,19 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/index.css">
+    <title>TrainticketSystem</title>
+    <!-- js -->
     <script src="js/index.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="jquery-ui-bootstrap/js/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="jquery-ui-bootstrap/js/demo.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="jquery-ui-bootstrap/css/demo.css">
-    <link rel="stylesheet"
-          href="jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.0.custom.css">
+    <link rel="stylesheet" href="jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.0.custom.css">
   </head>
   
-  <body>
-  
+<body> 
 
 <!-- 标题栏 -->
 <div class="header">
@@ -31,8 +31,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <ul class="header-menu">
       <li class="menu-line menu-item">|</li>
       <li class="menu-item menu-login">
-      您好，请<a id="login_user" name="g_href" href="javascript:;">登录</a>
-      <a id="regist_out" name="g_href" href="javascript:;" class="ml">注册</a>
+      您好，请<a id="login_user" name="g_href" href="RegLogin.jsp">登录</a>
+      <a id="regist_out" name="g_href" href="RegLogin.jsp" class="ml">注册</a>
       </li>
     </ul>
 </span>
@@ -41,25 +41,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!-- 导航栏 -->
 <div class="navBar">
     <ul class="navBar_ul">
-        <li id="1" class="navBar_li"><a href="">首页</a></li>
+        <li id="1" class="navBar_li"><a href="index.jsp">首页</a></li>
         <li id="2" class="navBar_li"><a href="">车票</a></li>
-        <li id="3" class="navBar_li"><a href="">我的车票</a></li>
+        <li id="3" class="navBar_li"><a href="UserInfo.jsp">我的车票</a></li>
     </ul>
 </div>
 <!-- 查询框 -->
 <div class="search">
     <ul>
         <li>
-            <span>
-                <label>始发地</label>
-            </span>
-            <input id="tags" type="text" name="depStation" >
+            <div class="ui-widget">
+            <label>始发地</label>
+            <input id="tags" type="text" name="departure" >
+            </div>
         </li>
         <li>
             <span>
                 <label>目的地</label>
             </span>
-            <input type="text" name="TerStation">
+            <input type="text" name="destination">
         </li>
         <li>
             <span>
@@ -69,12 +69,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </li>
     </ul>
     <span class="search_btn">
-        <input type="button" name="TrainQuery" value="Submit" class="ui-button">
+        <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">
+            <span class="ui-button-text">Submit</span>
+        </button>
     </span>
 
 </div>
 <!-- 查询结果表格 -->
-<div class="table">
+<div class="table" id="customers">
   <table>
       <thead>
         <tr class="th">
@@ -88,7 +90,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <th>备注</th>
         </tr>
       </thead>
-      <tr id="tr1">
+      <tr id="tr1" class="alt">
           <td>C1234</td>
           <td>广州南</td>
           <td>珠海</td>
@@ -108,7 +110,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <td></td>
           <td>预定</td>
       </tr>
-      <tr id="tr3">
+      <tr id="tr3" class="alt">
           <td>C1234</td>
           <td>广州南</td>
           <td>珠海</td>
@@ -138,6 +140,5 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
   </div>
 </div>
-
   </body>
 </html>
