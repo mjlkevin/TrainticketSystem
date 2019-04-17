@@ -30,25 +30,6 @@ public class DBCon {
 		    return null;
 		};
 			
-		
-/*		try{
-			//加载驱动程序
-			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-			//连接数据库
-			String url="jdbc:sqlserver://localhost:1433; DatabaseName=UsersDB";
-			Connection conn=DriverManager.getConnection(url,"sa","");
-			System.out.println("数据库连接成功!");
-			return conn;
-		}catch(ClassNotFoundException ex1){
-			System.out.println("数据库连接失败!");
-			ex1.printStackTrace();
-			return null;
-		}catch(SQLException ex2){
-			System.out.println("数据库连接失败!");
-			ex2.printStackTrace();
-			return null;
-		}
-	}*/
 	//验证用户登录的方法
 	public static boolean validateLogin(String name,String password){
 		System.out.println("进入validateLogin方法");
