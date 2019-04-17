@@ -108,13 +108,13 @@ body{
     border: 1px solid #3e9ed9;
     box-shadow:0 0 10px #AFB1B3;
 }
-.search>ul{
+.search_frame_ul{
     position: relative;
     float: left;
     top: 30px;
     margin-left: 10px;
 }
-.search>ul>li{
+.search_frame_li{
     position: relative;
     display: inline-block;
     float: left;

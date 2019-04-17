@@ -49,24 +49,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </div>
 <!-- 查询框 -->
 <div class="search">
-	<form action="TrainQueryAction">
-    <ul>
-        <li>
+    <form action="TrainQueryAction" style="border:1px solid #000">
+    <ul class="search_frame_ul">
+        <li class="search_frame_li">
             <div class="ui-widget">
             <span>
-            <label>出发地</label>
+            	<label>出发地</label>
             </span>
-            <input id="tags" type="text" name="depStation" >
+            <input id="tags" class="ui-autocomplete-input" type="text" name="depStation" >
             </div>
         </li>
-        <li>
-       
+        <li class="search_frame_li">
             <span>
                 <label>目的地</label>
             </span>
-            <input id="tags" type="text" name="TerStation">
+            <input id="tags" class="ui-autocomplete-input" type="text" name="TerStation">
         </li>
-        <li>
+        <li class="search_frame_li">
             <span>
                 <label>出发日期</label>
                 <input id="datepicker" type="text" name="depDate">
@@ -75,11 +74,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </ul>
     <span class="search_btn">
         <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" ">
-            <span class="ui-button-text">Submit</span>
+            <span class="ui-button-text">查询</span>
         </button>
     </span>
  </form>
 </div>
+
 <!-- 查询结果表格 -->
 <div class="table" id="customers">
   <table>
