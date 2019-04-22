@@ -1,0 +1,134 @@
+@charset "utf-8";
+input[type="text"] {
+    width: 180px;
+    height: 20px;
+}
+input[type="password"]{
+    width: 180px;
+    height: 20px;
+}
+.LogRegFrame{
+    position: relative;
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 30%;
+    height: 500px;
+    border: white solid 5px;
+    background-color: #fff;
+}
+/*模块切换栏*/
+.top_tab_line{
+    height: 30px;
+    background-color: #fff;
+}
+.tab_line{
+    margin:20px 62px;
+    width: 300px;
+    height: 40px;
+}
+.tab_line a{
+
+    position: absolute;
+    display: inline-block;
+    line-height: 50px;
+    cursor: pointer;
+    float:left;
+
+    color:#000000;
+    text-decoration:none; /* 取消a标签的默认样式*/
+    font-family: "微软雅黑";
+    font-size: 20px;
+
+}
+.border{
+    border-bottom: 3px solid #ffa00a;
+}
+
+.tab_line a:nth-child(1){
+    margin-left: 170px;
+}
+
+.vline{
+    position: absolute;
+    z-index: 1;
+    float: left;
+    margin:20px 120px;
+    color: #999;
+}
+
+
+/*登录框样式*/
+.loginFrame{
+    /*width: 30%;*/
+    /*height: 70%;*/
+    margin-right: 20px;
+
+}
+
+.loginFrame form{
+
+    width: 350px;
+    height: 400px;
+    margin: 100px auto;
+}
+
+.loginFrame table{
+    
+    width: 300px;
+    height: 160px;
+    margin: 20px 30px;
+}
+.loginFrame table tr td img{
+    margin-right: 5px;
+}
+/*登录按钮*/
+.loginFrame>form>.sumitBtn{
+    display: block;
+    margin: 50px auto;
+}
+.registerFrame{
+    display: none;
+    width: 30%;
+    height: 70%;
+
+}
+.registerFrame form{
+    width: 500px;
+    height: 300px;
+    margin: 45px auto;
+}
+.registerFrame table {
+    table-layout:fixed;
+    width: 400px;
+    height: 260px;
+    margin: 30px 30px;
+}
+.registerFrame table tr td img{
+    margin-right: 5px;
+}
+.registerFrame table tr td #yzm_button{
+    margin-right: 80px;
+}
+
+.submitBtn{
+    display: block;
+    width: 196px;
+    height: 18px;
+    margin: 0px auto;
+    cursor: pointer;
+    padding: 10px 0 8px;
+    line-height: 18px;
+    font-size: 16px;
+
+    border: 1px solid #ffb33b;
+    color: #FFF;
+    background: #FFA00A;
+    font-weight: bold;
+    text-align: center;
+    font-style: normal;
+}
+
+
+.loginFrame>a #register{
+}
