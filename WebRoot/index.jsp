@@ -71,6 +71,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <input id="datepicker" type="text" name="depDate">
             </span>
         </li>
+        <li>
+        <span>方向</span>
+        <input type="radio" name="Direction" value="gzn">广州南
+        <input type="radio" name="Direction" value="zhuhai">珠海
+        </li>
     </ul>
     <span class="search_btn">
         <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" ">

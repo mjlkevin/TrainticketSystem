@@ -6,15 +6,18 @@ public class Train {
 	private String TerStation;
 	private String ArrTime;
 	private String LeaveTime;
+	private String Direction;
+
 	public Train(){
 		
 	}
-	public Train(String TrainNumber,String depStation,String TerStation,String ArrTime,String LeaveTime){
+	public Train(String TrainNumber,String depStation,String TerStation,String ArrTime,String LeaveTime,String Direction){
 		this.TrainNumber=TrainNumber;
 		this.depStation=depStation;
 		this.TerStation=TerStation;
 		this.ArrTime=ArrTime;
 		this.LeaveTime = LeaveTime;
+		this.Direction = Direction;
 	}
 	public String getLeaveTime() {
 		return LeaveTime;
@@ -46,5 +49,10 @@ public class Train {
 	public void setArrTime(String arrTime) {
 		ArrTime = arrTime;
 	}
-	
+	public String getDirection() {
+		return Direction;
+	}
+	public void setDirection(String direction) {
+		Direction = direction;
+	}
 }

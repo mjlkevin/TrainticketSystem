@@ -37,7 +37,7 @@ public class DBCon {
 		Statement stmt=null;
 		try{
 			stmt=conn.createStatement();
-			String sql="select * from accountinfo where uname='"+name+"' and upassword='"+password+"'";
+			String sql="select * from tb_user where uname='"+name+"' and upassword='"+password+"'";
 			ResultSet rs=stmt.executeQuery(sql);
 			System.out.println(rs);
 			if(rs.next()){
@@ -58,7 +58,7 @@ public class DBCon {
 		try{
 			
 			stmt=conn.createStatement();
-			String sql="insert into accountinfo values('"+person.getName()+"','"+person.getPassword()+"','"+
+			String sql="insert into tb_user values('"+person.getName()+"','"+person.getPassword()+"','"+
 			            person.getSex()+"',"+person.getAge()+",'"+person.getEmail()+"')";
 			int r=stmt.executeUpdate(sql);
 			if(r>0){
@@ -73,34 +73,80 @@ public class DBCon {
 		}
 	}
 
+	//this method is used to get index from Array
+	public static int printArray(String[] array,String value) {
+		for(int i=0;i<array.length;i++) {
+			if(array[i].equals(value)) {
+				return i;
+				
+			}
+		}
+		return -1;
+	}
+	//to descied which table to be selected
+	public static String chooseTable(String sta) {
+        
+		if(sta!=null) {
+        if(sta.equals("中山")) {
+        	sta = "tb_station_zs";
+       	}else if(sta.equals("唐家湾")){
+       		sta = "tb_station_tjw";	
+       	}else if(sta.equals("珠海")){
+       		sta = "tb_station_zh";
+           }else if(sta.equals("广州南")){
+        	   sta = "tb_station_gzn";
+           }
+		}
+           return sta;
+	};
 	//车次查询的方法
 	public static ResultSet TrainQuery(Train train){
+		
 		Connection conn=JDBCon();
 		Statement stmt=null;
-		//确定数据库表
-        String station =train.getDepStation();
+		
+		String dir = train.getDirection();
+        String Depstation = train.getDepStation();
+        String TerStation = train.getTerStation();
         
-         if(station.equals("中山")) {
-        	station = "zs_traininfo";
-        	}else if(station.equals("唐家湾")){
-        	station = "tjw_traininfo";	
-        	}else if(station.equals("珠海")){
-            station = "zh_traininfo";	
-            }else if(station.equals("广州南")){
-            station = "gzn_traininfo";
-            }
-        System.out.println("table:"+"\t"+station);
-        System.out.println("trainnumber"+"\t"+"ArrivalTime"+"\t"+"LeaveTime");
-            
+        String[] Station_list = {"广州南","中山","唐家湾","珠海"}; 
+        int Dep_index = printArray(Station_list, Depstation);
+        int Ter_index = printArray(Station_list, TerStation);
+        
+        if(Dep_index - Ter_index >0) {
+        	dir = "广州南";
+        }else if(Dep_index - Ter_index <0){
+        	dir = "珠海";
+        }
+        System.out.println("列车方向为"+dir);
+        
+        Depstation = chooseTable(Depstation);
+        TerStation = chooseTable(TerStation);
+         
+        System.out.println("trainnumber"+"\t"+"ArrivalTime"+"\t"+"LeaveTime"+"\t"+"方向");
+        
 		try{
 			stmt=conn.createStatement();
-	        //sql查询语句
-			String sql="select * from "+station;
+			
+	        //create SQL query
+			String sql="select "+
+	        Depstation+".trainnumber,"+
+	        Depstation+".ArrivalTime,"+
+	        Depstation+".LeaveTime,"+
+	        Depstation+".direction"+
+	        " from "+
+	        Depstation+","+TerStation+
+	        " where "+
+	        Depstation+".trainnumber = "+TerStation+".trainnumber and "+Depstation+".Direction = "+ "'"+dir+"'";
+			
+			System.out.println(sql);
+			//SystemPrint test
 			//执行查询，把查询结果赋值给结果集对象
 			ResultSet rs = stmt.executeQuery(sql);
-
 			return rs;
+			
 		}catch(SQLException ex){
+			
 			System.out.println("数据库访问失败!");
 			ex.printStackTrace();
 			return null;

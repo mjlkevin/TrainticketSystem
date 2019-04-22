@@ -14,6 +14,8 @@ public class TrainQueryAction {
 	private String TerStation;//定义用户目的地
 	private String depDate;//定义出发日期
 	private String depTime;//定义出发时间
+	private String Direction;//方向
+
 	private ResultSet rs;
 public ResultSet getRs() {
 		return rs;
@@ -63,15 +65,31 @@ public ResultSet getRs() {
 	public void setLeaveTime(String leaveTime) {
 		LeaveTime = leaveTime;
 	}
+	public String getDirection() {
+		return Direction;
+	}
+	public void setDirection(String direction) {
+		Direction = direction;
+	}
 	//默认方法
 	public String execute()throws Exception{
-		Train train=new Train("",depStation,TerStation,"","");
+		//实例化一个Train对象，按照顺序传入参数
+		Train train=new Train("",depStation,TerStation,"","",Direction);
+		
+		String Depstation = train.getDepStation();
+		
+		//根据传入参数所实例化的这个Train对象，到数据库中进行查询
 			ResultSet rs = DBCon.TrainQuery(train);
+			System.out.println(Depstation);
+			Depstation = DBCon.chooseTable(Depstation);
+			System.out.println(Depstation);
+			
 			while(rs.next()) {
 			String trainnumber = rs.getString("trainnumber");
 			String ArrTime = rs.getString("ArrivalTime");
 			String LefTime = rs.getString("LeaveTime");
-			System.out.println(trainnumber+"\t"+"\t"+ArrTime+"\t"+LefTime);
+			String direction = rs.getString(Depstation+".direction");
+			System.out.println(trainnumber+"\t"+"\t"+ArrTime+"\t"+LefTime+"\t"+direction);
 			}
 		
 			return "success";

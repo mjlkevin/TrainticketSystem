@@ -11,7 +11,7 @@
     	if(request.getSession().getAttribute("loginUser")!=null){
 	    	request.getSession().removeAttribute("loginUser");
     	}
-    	response.sendRedirect("reglogin.jsp");
+    	response.sendRedirect("RegLogin.jsp");
      %>
 
   </body>
