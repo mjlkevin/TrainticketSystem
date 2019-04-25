@@ -1,5 +1,7 @@
 package bean;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 public class DBCon {
 	public DBCon(){
 		
@@ -13,7 +15,7 @@ public class DBCon {
 //			characterEncoding=utf-8serverTimezone=GMT
 			String url="jdbc:mysql://localhost:3306/trainticketsystem?characterEncoding=utf-8&serverTimezone=GMT";
 			String username="root";
-			String password="Mjlkevin121133";
+			String password="Mjlkevin121133@";
 		
             Connection conn = DriverManager.getConnection(url,username,password);
             return conn;
@@ -39,7 +41,6 @@ public class DBCon {
 			stmt=conn.createStatement();
 			String sql="select * from tb_user where uname='"+name+"' and upassword='"+password+"'";
 			ResultSet rs=stmt.executeQuery(sql);
-			System.out.println(rs);
 			if(rs.next()){
 				return true;
 			}else{
@@ -100,16 +101,18 @@ public class DBCon {
            return sta;
 	};
 	//车次查询的方法
-	public static ResultSet TrainQuery(Train train){
+	public static List TrainQuery(Train train){
 		
-		Connection conn=JDBCon();
-		Statement stmt=null;
+		Connection conn = JDBCon();
+		Statement stmt  = null;
 		
 		String dir = train.getDirection();
         String Depstation = train.getDepStation();
         String TerStation = train.getTerStation();
+        List alltrainList = new ArrayList();
         
         String[] Station_list = {"广州南","中山","唐家湾","珠海"}; 
+        
         int Dep_index = printArray(Station_list, Depstation);
         int Ter_index = printArray(Station_list, TerStation);
         
@@ -118,12 +121,10 @@ public class DBCon {
         }else if(Dep_index - Ter_index <0){
         	dir = "珠海";
         }
-        System.out.println("列车方向为"+dir);
+        System.out.println("列车方向: "+dir+" 方向");
         
         Depstation = chooseTable(Depstation);
         TerStation = chooseTable(TerStation);
-         
-        System.out.println("trainnumber"+"\t"+"ArrivalTime"+"\t"+"LeaveTime"+"\t"+"方向");
         
 		try{
 			stmt=conn.createStatement();
@@ -139,11 +140,21 @@ public class DBCon {
 	        " where "+
 	        Depstation+".trainnumber = "+TerStation+".trainnumber and "+Depstation+".Direction = "+ "'"+dir+"'";
 			
-			System.out.println(sql);
-			//SystemPrint test
 			//执行查询，把查询结果赋值给结果集对象
 			ResultSet rs = stmt.executeQuery(sql);
-			return rs;
+			
+			while(rs.next()) {
+				Train tResult = new Train();
+				tResult.setTrainNumber(rs.getString("trainnumber"));
+				tResult.setArrTime(rs.getString("ArrivalTime"));
+				tResult.setLeaveTime(rs.getString("LeaveTime"));
+				tResult.setDirection(rs.getString(Depstation+".direction"));
+				tResult.setDepStation(train.getDepStation());
+				tResult.setTerStation(train.getTerStation());
+				alltrainList.add(tResult);
+			  }
+			
+			return alltrainList;
 			
 		}catch(SQLException ex){
 			
@@ -151,5 +162,6 @@ public class DBCon {
 			ex.printStackTrace();
 			return null;
 		}
+		
 	}
 }

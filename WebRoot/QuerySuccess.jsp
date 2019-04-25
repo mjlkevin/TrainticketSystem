@@ -95,6 +95,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <th>备注</th>
         </tr>
       </thead>
+      <s:iterator value="#session.alltrainList">
+      <tr id="tr1" class="alt">
+          <td><s:property value="TrainNumber"/></td>
+          <td><s:property value="DepStation"/> </td>
+          <td><s:property value="TerStation"/> </td>
+          <td> <s:property value="ArrTime"/></td>
+          <td> <s:property value="LeaveTime"/></td>
+          <td>是</td>
+          <td></td>
+          <td>预定</td>
+      </s:iterator>
   </table>
 </div>
 

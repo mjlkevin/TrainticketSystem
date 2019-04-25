@@ -12,12 +12,12 @@ public class Train {
 		
 	}
 	public Train(String TrainNumber,String depStation,String TerStation,String ArrTime,String LeaveTime,String Direction){
-		this.TrainNumber=TrainNumber;
-		this.depStation=depStation;
-		this.TerStation=TerStation;
-		this.ArrTime=ArrTime;
-		this.LeaveTime = LeaveTime;
-		this.Direction = Direction;
+		this.TrainNumber = TrainNumber;
+		this.depStation =  depStation;
+		this.TerStation =  TerStation;
+		this.ArrTime    =  ArrTime;
+		this.LeaveTime  =  LeaveTime;
+		this.Direction  =  Direction;
 	}
 	public String getLeaveTime() {
 		return LeaveTime;

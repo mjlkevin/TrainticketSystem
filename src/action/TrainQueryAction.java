@@ -1,10 +1,12 @@
 package action;
 import java.sql.ResultSet;
+import java.util.List;
 import java.util.Map;
 import com.opensymphony.xwork2.ActionContext;
 import bean.DBCon;
 import bean.Person;
 import bean.Train;
+import bean.TrainQuery;
 
 public class TrainQueryAction {
 	private String TrainNumber;//车次
@@ -15,19 +17,19 @@ public class TrainQueryAction {
 	private String depDate;//定义出发日期
 	private String depTime;//定义出发时间
 	private String Direction;//方向
-
+	private List<TrainQuery> trainQuery;
 	private ResultSet rs;
-public ResultSet getRs() {
+	
+    public ResultSet getRs() {
 		return rs;
 	}
 	public void setRs(ResultSet rs) {
 		this.rs = rs;
 	}
-	//	构造函数
+	
 	public TrainQueryAction(){
 		
 	}
-//get set 方法
 
 	public String getTerStation() {
 		return TerStation;
@@ -71,27 +73,41 @@ public ResultSet getRs() {
 	public void setDirection(String direction) {
 		Direction = direction;
 	}
+	public List<TrainQuery> getTrainQuery() {
+		return trainQuery;
+	}
+	public void setTrainQuery(List<TrainQuery> trainQuery) {
+		this.trainQuery = trainQuery;
+	}
 	//默认方法
 	public String execute()throws Exception{
 		//实例化一个Train对象，按照顺序传入参数
 		Train train=new Train("",depStation,TerStation,"","",Direction);
-		
 		String Depstation = train.getDepStation();
 		
 		//根据传入参数所实例化的这个Train对象，到数据库中进行查询
-			ResultSet rs = DBCon.TrainQuery(train);
-			System.out.println(Depstation);
+//		    ResultSet rs = DBCon.TrainQuery(train);
+		    List alltrainList = DBCon.TrainQuery(train);
 			Depstation = DBCon.chooseTable(Depstation);
-			System.out.println(Depstation);
-			
-			while(rs.next()) {
-			String trainnumber = rs.getString("trainnumber");
-			String ArrTime = rs.getString("ArrivalTime");
-			String LefTime = rs.getString("LeaveTime");
-			String direction = rs.getString(Depstation+".direction");
-			System.out.println(trainnumber+"\t"+"\t"+ArrTime+"\t"+LefTime+"\t"+direction);
+			System.out.println(alltrainList);
+			System.out.println("出发地： "+train.getDepStation()+"\t"+"目的地： "+train.getTerStation());
+	        System.out.println("trainnumber"+"\t"+"ArrivalTime"+"\t"+"LeaveTime"+"\t"+"direction");	
+	        	
+//			while(rs.next()) {
+//			String trainnumber = rs.getString("trainnumber");
+//			String ArrTime = rs.getString("ArrivalTime");
+//			String LefTime = rs.getString("LeaveTime");
+//			String direction = rs.getString(Depstation+".direction");
+//
+//			System.out.println(trainnumber+"\t"+"\t"+ArrTime+"\t"+LefTime+"\t"+direction);
+//			}
+	        
+			if(ActionContext.getContext().getSession().containsKey("alltrainList")){
+				
+				ActionContext.getContext().getSession().remove("alltrainList");
 			}
-		
+			ActionContext.getContext().getSession().put("alltrainList",alltrainList);
+		    
 			return "success";
 			}
 	
