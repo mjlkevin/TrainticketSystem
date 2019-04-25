@@ -13,36 +13,44 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <meta charset="UTF-8">
     <title>TrainticketSystem</title>
     <!-- js -->
-    <script src="js/index.js"></script>
+      <!-- jQuery -->
     <script src="js/jquery-3.3.1.js"></script>
+      <!-- jQuery-ui-->
     <script src="jquery-ui-bootstrap/js/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="jquery-ui-bootstrap/js/demo.js"></script>
       <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.wijmo-open.1.5.0.min.js"></script>
       <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.mousewheel.min.js"></script>
       <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.bgiframe-2.1.3-pre.js"></script>
+      <!--自定义js-->
+      <script src="js/index.js"></script>
     <!-- css -->
+      <!-- 框架css -->
+      <link rel="stylesheet" href="jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.0.custom.css">
       <link rel="stylesheet" href="jquery-ui-bootstrap/assets/css/docs.css">
       <link rel="stylesheet" href="jquery-ui-bootstrap/assets/css/font-awesome.min.css">
       <link rel="stylesheet" href="jquery-ui-bootstrap/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index2.css">
-    <link rel="stylesheet" href="jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.0.custom.css">
       <!--begin wijmo menu-->
       <link href="jquery-ui-bootstrap/third-party/wijmo/jquery.wijmo-open.1.5.0.css" rel="stylesheet" type="text/css" />
       <!--End wijmo menu-->
+      <!-- 自定义css -->
+      <link rel="stylesheet" href="css/index2.css">
+
+
   </head>
   
 <body> 
 
 <!-- wijmo -->
 <div id="wijmo-container" class="container-fluid">
-    <div class="ui-widget ui-widget-header wijmo-wijmenu ui-corner-all ui-helper-clearfix wijmo-wijmenu-horizontal" aria-activedescendant="ui-active-menuitem" role="menubar"><div class="scrollcontainer checkablesupport"><ul id="menu1" class="wijmo-wijmenu-list ui-helper-reset" tabindex="0" style="display: block;">
+    <div class="ui-widget ui-widget-header wijmo-wijmenu ui-corner-all ui-helper-clearfix wijmo-wijmenu-horizontal" aria-activedescendant="ui-active-menuitem" role="menubar">
+        <div class="scrollcontainer checkablesupport">
+            <ul id="menu1" class="wijmo-wijmenu-list ui-helper-reset" tabindex="0" style="display: block;">
         <li role="menuitem" class="ui-widget-header ui-corner-all">
-            <h3>
-                <a href="">TrainTicketSystem</a></h3>
+            <h3><a href="">TrainTicketSystem</a></h3>
         </li>
         <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="#" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Home</span></a></li>
-        <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="#" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Link</span></a></li>
-        <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="#" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Link</span></a></li>
+        <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="#" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Login</span></a></li>
+        <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="#" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Register</span></a></li>
         <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="#" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Dropdown</span><span class="ui-icon ui-icon-triangle-1-s"></span></a>
             <ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;">
                 <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="#" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Secondary link</span></a> </li>
@@ -61,15 +69,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!--标题栏-->
 <div class="header">
     <h1 id="title">BuyAndGo火车购票系统</h1>
-<span class="right">
-    <ul class="header-menu">
-      <li class="menu-line menu-item">|</li>
-      <li class="menu-item menu-login">
-      您好，请<a id="login_user" name="g_href" href="RegLogin.html">登录</a>
-      <a id="regist_out" name="g_href" href="RegLogin.html" class="ml">注册</a>
-      </li>
-    </ul>
-</span>
 </div>
 
 <!-- 查询框 -->
@@ -113,44 +112,44 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
         </tr>
       </thead>
       <tr id="tr1" class="alt">
-          <td>C1234</td>
-          <td>广州南</td>
-          <td>珠海</td>
-          <td>18:00</td>
-          <td>19:00</td>
-          <td>是</td>
-          <td></td>
-          <td>预定</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
       </tr>
       <tr id="tr2">
-          <td>C1234</td>
-          <td>广州南</td>
-          <td>珠海</td>
-          <td>18:00</td>
-          <td>19:00</td>
-          <td>是</td>
-          <td></td>
-          <td>预定</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
       </tr>
       <tr id="tr3" class="alt">
-          <td>C1234</td>
-          <td>广州南</td>
-          <td>珠海</td>
-          <td>18:00</td>
-          <td>19:00</td>
-          <td>是</td>
-          <td></td>
-          <td>预定</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
       </tr>
       <tr id="tr4">
-          <td>C1234</td>
-          <td>广州南</td>
-          <td>珠海</td>
-          <td>18:00</td>
-          <td>19:00</td>
-          <td>是</td>
-          <td></td>
-          <td>预定</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
+          <td>null</td>
       </tr>
   </table>
 </div>
