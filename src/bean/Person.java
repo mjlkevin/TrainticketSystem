@@ -6,15 +6,18 @@ public class Person {
 	private String sex;
 	private String age;
 	private String email;
+	private String phonenumber;
+
 	public Person(){
 		
 	}
-	public Person(String name,String password,String sex,String age,String email){
-		this.name=name;
-		this.password=password;
-		this.sex=sex;
-		this.age=age;
-		this.email=email;
+	public Person(String name,String password,String sex,String age,String phonenumber,String email){
+		this.name = name;
+		this.password = password;
+		this.sex = sex;
+		this.age = age;
+		this.phonenumber = phonenumber;
+		this.email = email;
 	}
 	public String getName() {
 		return name;
@@ -39,6 +42,12 @@ public class Person {
 	}
 	public void setAge(String age) {
 		this.age = age;
+	}
+	public String getPhonenumber() {
+		return phonenumber;
+	}
+	public void setPhonenumber(String phonenumber) {
+		this.phonenumber = phonenumber;
 	}
 	public String getEmail() {
 		return email;

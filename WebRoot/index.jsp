@@ -11,99 +11,128 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <meta charset="UTF-8">
     <title>TrainticketSystem</title>
     <!-- js -->
-    <script src="js/index.js"></script>
+    <!-- jQuery -->
     <script src="js/jquery-3.3.1.js"></script>
+    <!-- jQuery-ui-->
     <script src="jquery-ui-bootstrap/js/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="jquery-ui-bootstrap/js/demo.js"></script>
+    <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.wijmo-open.1.5.0.min.js"></script>
+    <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.mousewheel.min.js"></script>
+    <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.bgiframe-2.1.3-pre.js"></script>
+    <!--自定义js-->
+    <script src="js/index.js"></script>
     <!-- css -->
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="jquery-ui-bootstrap/css/demo.css">
+    <!-- 框架css -->
     <link rel="stylesheet" href="jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.0.custom.css">
+    <link rel="stylesheet" href="jquery-ui-bootstrap/assets/css/docs.css">
+    <link rel="stylesheet" href="jquery-ui-bootstrap/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="jquery-ui-bootstrap/assets/css/bootstrap.min.css">
+    <!--begin wijmo menu-->
+    <link href="jquery-ui-bootstrap/third-party/wijmo/jquery.wijmo-open.1.5.0.css" rel="stylesheet" type="text/css" />
+    <!--End wijmo menu-->
+
+    <!-- customCss -->
+    <link rel="stylesheet" href="css/index2.css">
   </head>
   
-<body> 
-
-<!-- 标题栏 -->
-<div class="header">
-    <span class="logo">
-    </span>
-    <h1 id="title">BuyAndGo火车购票系统</h1>
-<span class="right">
-    <ul class="header-menu">
-      <li class="menu-line menu-item">|</li>
-      <li class="menu-item menu-login">
-      您好，请<a id="login_user" name="g_href" href="RegLogin.jsp">登录</a>
-      <a id="regist_out" name="g_href" href="RegLogin.jsp" class="ml">注册</a>
-      </li>
-    </ul>
-</span>
-
-</div>
-<!-- 导航栏 -->
-<div class="navBar">
-    <ul class="navBar_ul">
-        <li id="1" class="navBar_li"><a href="index.jsp">首页</a></li>
-        <li id="2" class="navBar_li"><a href="">车票</a></li>
-        <li id="3" class="navBar_li"><a href="UserInfo.jsp">我的车票</a></li>
-    </ul>
-</div>
-<!-- 查询框 -->
-<div class="search">
-    <form action="TrainQueryAction" style="border:1px solid #000">
-    <ul class="search_frame_ul">
-        <li class="search_frame_li">
-            <div class="ui-widget">
-            <span>
-            	<label>出发地</label>
-            </span>
-            <input id="tags" class="ui-autocomplete-input" type="text" name="depStation" >
-            </div>
+<body style="padding:0">
+    <!-- wijmo start-->
+<div id="wijmo-mycss wijmo-container" class="container-fluid" style="padding:0px 0px 0px 0px">
+  <div class="ui-widget ui-widget-header wijmo-wijmenu ui-corner-all ui-helper-clearfix wijmo-wijmenu-horizontal" aria-activedescendant="ui-active-menuitem" role="menubar">
+    <div class="scrollcontainer checkablesupport">
+      <ul id="menu1" class="wijmo-wijmenu-list ui-helper-reset" tabindex="0" style="display: block;">
+        <li role="menuitem" class="ui-widget-header ui-corner-all">
+          <h3><a href="">TrainTicketSystem</a></h3>
         </li>
-        <li class="search_frame_li">
-            <span>
-                <label>目的地</label>
-            </span>
-            <input id="tags" class="ui-autocomplete-input" type="text" name="TerStation">
-        </li>
-        <li class="search_frame_li">
-            <span>
-                <label>出发日期</label>
-                <input id="datepicker" type="text" name="depDate">
-            </span>
-        </li>
-    </ul>
-    <span class="search_btn">
-        <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" ">
-            <span class="ui-button-text">查询</span>
-        </button>
-    </span>
- </form>
-</div>
+    <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="index.jsp" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Home</span></a></li>
+    <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="RegLogin.jsp" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Login</span></a></li>
+    <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="RegLogin.jsp" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Register</span></a></li>
 
-<!-- 查询结果表格 -->
-<div class="table" id="customers">
-  <table>
-      <thead>
-        <tr class="th">
-            <th>车次</th>
-            <th>出发站</th>
-            <th>到达站</th>
-            <th>出发时间</th>
-            <th>到达时间</th>
-            <th>一等座</th>
-            <th>二等座</th>
-            <th>备注</th>
-        </tr>
-      </thead>
-  </table>
-</div>
-
-<!-- 页脚-->
-<div class="bottom" style="bottom:0px">
-    <div class="footer-con"></div>
-  <div class="footer-txt">
-
+      </ul>
+    </div>
   </div>
 </div>
-  </body>
+    <!-- wijmo end-->
+
+<!--custom header-->
+<div class="header">
+    <h1 id="title">BuyAndGo火车购票系统</h1>
+</div>
+
+<!-- search-frame -->
+    <div class="search">
+    <form action="TrainQueryAction" id="search_form">
+    <ul class="search_frame_ul">
+    <li class="search_frame_li"><span><label>出发地</label></span></li>
+    <li class="search_frame_li">
+    <input id="tags" class="ui-autocomplete-input" type="text" name="depStation" >
+    </li>
+    <li class="search_frame_li"><span><label>目的地</label></span></li>
+    <li class="search_frame_li">
+    <input id="tags" class="ui-autocomplete-input" type="text" name="TerStation">
+    </li>
+    <li class="search_frame_li"><span><label>出发日期</label></span></li>
+    <li class="search_frame_li">
+    <input id="datepicker" type="text" name="depDate">
+    </li>
+    </ul>
+    <span class="search_btn">
+    <button class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" >
+    <span class="ui-button-text">查询</span>
+    </button>
+    </span>
+    </form>
+    </div>
+
+<!-- 查询结果表格 -->
+    <div class="table" id="customers">
+    <table class="search-result">
+    <thead>
+    <tr class="th">
+    <th>车次</th>
+    <th>出发站</th>
+    <th>到达站</th>
+    <th>出发时间</th>
+    <th>到达时间</th>
+    <th>一等座</th>
+    <th>二等座</th>
+    <th>备注</th>
+    </tr>
+    </thead>
+    <tr id="tr1" class="alt">
+    <td>null</td>
+    <td>null</td>
+    <td>null</td>
+    <td>null</td>
+    <td>null</td>
+    <td>null</td>
+    <td>null</td>
+    <td>
+    <button class="book_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" >
+    <span class="ui-button-text">预订</span>
+    </button>
+    </td>
+    </tr>
+    <tr id="tr2">
+    <td>null</td>
+    <td>null</td>
+    <td>null</td>
+    <td>null</td>
+    <td>null</td>
+    <td>null</td>
+    <td>null</td>
+    <td>
+    <button class="book_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" >
+    <span class="ui-button-text">预订</span>
+    </button>
+    </td>
+    </tr>
+  </table>
+</div>
+<!-- 页脚-->
+<div class="bottom">
+  <div class="footer-con"></div>
+  <div class="footer-txt"></div>
+  </div>
+</body>
 </html>

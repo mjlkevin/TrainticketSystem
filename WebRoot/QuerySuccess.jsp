@@ -32,8 +32,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <ul class="header-menu">
       <li class="menu-line menu-item">|</li>
       <li class="menu-item menu-login">
-      您好，请<a id="login_user" name="g_href" href="RegLogin.jsp">登录</a>
-      <a id="regist_out" name="g_href" href="RegLogin.jsp" class="ml">注册</a>
+      您好，请<a id="login_user" name="g_href" href="RegLogin2.jsp">登录</a>
+      <a id="regist_out" name="g_href" href="RegLogin2.jsp" class="ml">注册</a>
       </li>
     </ul>
 </span>
@@ -100,8 +100,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <td><s:property value="TrainNumber"/></td>
           <td><s:property value="DepStation"/> </td>
           <td><s:property value="TerStation"/> </td>
-          <td> <s:property value="ArrTime"/></td>
-          <td> <s:property value="LeaveTime"/></td>
+          <td><s:property value="LeaveTime"/></td>
+          <td> </td>
           <td>是</td>
           <td></td>
           <td>预定</td>

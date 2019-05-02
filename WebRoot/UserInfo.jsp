@@ -45,7 +45,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <ul class="header-menu">
       <li class="menu-line menu-item">|</li>
       <li class="menu-item menu-login">
-      您好，请<a id="login_user" name="g_href" href="RegLogin.html">登录</a>
+      您好，请<a id="login_user" name="g_href" href="RegLogin-2.jsp">登录</a>
       <a id="regist_out" name="g_href" href="javascript:;" class="ml">注册</a>
       </li>
     </ul>

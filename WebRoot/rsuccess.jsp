@@ -17,9 +17,9 @@
     				<input type="submit" value="退出登录"/>
     			</form>
     	 <%
-    		}else if(request.getSession().getAttribute("rname")!=null){
+    		}else if(request.getSession().getAttribute("username")!=null){
     	 %>
-    	 		恭喜你，<s:property value="rname"/>，注册成功!
+    	 		恭喜你，<s:property value="username"/>，注册成功!
     	 <%
     	 	}
     	 	

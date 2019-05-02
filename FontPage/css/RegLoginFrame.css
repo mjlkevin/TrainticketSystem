@@ -14,9 +14,7 @@ input[type="password"]{
     margin-right: 20px;
     width: 30%;
     height: 500px;
-    border: white solid 5px;
     background-color: #fff;
-    border: 1px solid #000;
 
     /* 圆角 */
     border-radius: 3px;
@@ -73,13 +71,7 @@ input[type="password"]{
     height: 160px;
     margin: 20px 30px;
 }
-.loginFrame table td input{
-    height: 25px;
-    margin-top: 10px;
-}
-.loginFrame table tr td img{
-    margin-right: 5px;
-}
+
 /*注册框样式*/
 .registerFrame{
     display: none;
@@ -90,6 +82,9 @@ input[type="password"]{
     width: 500px;
     height: 300px;
     margin: 45px auto;
+}
+.registerFrame table tr td input{
+    height: 25px;
 }
 .registerFrame table {
     table-layout:fixed;

@@ -15,7 +15,7 @@ public class DBCon {
 //			characterEncoding=utf-8serverTimezone=GMT
 			String url="jdbc:mysql://localhost:3306/trainticketsystem?characterEncoding=utf-8&serverTimezone=GMT";
 			String username="root";
-			String password="Mjlkevin121133@";
+			String password="Mjlkevin121133";
 		
             Connection conn = DriverManager.getConnection(url,username,password);
             return conn;
@@ -57,10 +57,10 @@ public class DBCon {
 		Connection conn=JDBCon();
 		Statement stmt=null;
 		try{
-			
 			stmt=conn.createStatement();
-			String sql="insert into tb_user values('"+person.getName()+"','"+person.getPassword()+"','"+
-			            person.getSex()+"',"+person.getAge()+",'"+person.getEmail()+"')";
+			String sql="insert into tb_user values(null,+'"+person.getName()+"','"+person.getPassword()+"',null,null,"
+					+ "'"+person.getPhonenumber()+"','"+person.getEmail()+"')";
+			System.out.println(sql);
 			int r=stmt.executeUpdate(sql);
 			if(r>0){
 				return true;
@@ -96,6 +96,12 @@ public class DBCon {
        		sta = "tb_station_zh";
            }else if(sta.equals("广州南")){
         	   sta = "tb_station_gzn";
+           }else if(sta.equals("小榄")){
+        	   sta = "tb_station_xiaolan";
+           }else if(sta.equals("容桂")){
+        	   sta = "tb_station_rg";
+           }else if(sta.equals("明珠")){
+        	   sta = "tb_station_mz";
            }
 		}
            return sta;
@@ -111,7 +117,7 @@ public class DBCon {
         String TerStation = train.getTerStation();
         List alltrainList = new ArrayList();
         
-        String[] Station_list = {"广州南","中山","唐家湾","珠海"}; 
+        String[] Station_list = {"广州南","容桂","小榄","中山","唐家湾","明珠","珠海"}; 
         
         int Dep_index = printArray(Station_list, Depstation);
         int Ter_index = printArray(Station_list, TerStation);
@@ -138,7 +144,8 @@ public class DBCon {
 	        " from "+
 	        Depstation+","+TerStation+
 	        " where "+
-	        Depstation+".trainnumber = "+TerStation+".trainnumber and "+Depstation+".Direction = "+ "'"+dir+"'";
+	        Depstation+".trainnumber = "+TerStation+".trainnumber and "+Depstation+".Direction = "+ "'"+dir+"'"+
+	        "order by LeaveTime asc";
 			
 			//执行查询，把查询结果赋值给结果集对象
 			ResultSet rs = stmt.executeQuery(sql);
