@@ -138,7 +138,7 @@ public class DBCon {
 	        //create SQL query
 			String sql="select "+
 	        Depstation+".trainnumber,"+
-	        Depstation+".ArrivalTime,"+
+	        TerStation+".ArrivalTime,"+
 	        Depstation+".LeaveTime,"+
 	        Depstation+".direction"+
 	        " from "+

@@ -10,17 +10,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <meta charset="UTF-8">
     <title>TrainticketSystem</title>
-    <!-- js -->
-    <!-- jQuery -->
-    <script src="js/jquery-3.3.1.js"></script>
-    <!-- jQuery-ui-->
-    <script src="jquery-ui-bootstrap/js/jquery-ui-1.9.2.custom.min.js"></script>
-    <script src="jquery-ui-bootstrap/js/demo.js"></script>
-    <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.wijmo-open.1.5.0.min.js"></script>
-    <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.mousewheel.min.js"></script>
-    <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.bgiframe-2.1.3-pre.js"></script>
-    <!--自定义js-->
-    <script src="js/index.js"></script>
     <!-- css -->
     <!-- 框架css -->
     <link rel="stylesheet" href="jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.0.custom.css">
@@ -45,8 +34,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <h3><a href="">TrainTicketSystem</a></h3>
         </li>
     <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="index.jsp" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Home</span></a></li>
-    <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="RegLogin.jsp" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Login</span></a></li>
-    <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="RegLogin.jsp" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Register</span></a></li>
+    <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="RegLogin-2.jsp" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Login</span></a></li>
+    <li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="RegLogin-2.jsp" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text">Register</span></a></li>
 
       </ul>
     </div>
@@ -94,17 +83,43 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <th>到达站</th>
     <th>出发时间</th>
     <th>到达时间</th>
-    <th>座位</th>
-    <th>票价</th>
+    <th>一等座</th>
+    <th>二等座</th>
     <th>备注</th>
     </tr>
     </thead>
+    <s:iterator value="#session.alltrainList">
+        <tr id="tr1" class="alt">
+          <td><s:property value="TrainNumber"/></td>
+          <td><s:property value="DepStation"/> </td>
+          <td><s:property value="TerStation"/> </td>
+          <td><s:property value="LeaveTime"/></td>
+          <td><s:property value="ArrTime"/></td>
+          <td>有余票</td>
+          <td>有余票</td>
+          <td><button class="book_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" >
+    <span class="ui-button-text">预订</span></button></td>
+    </s:iterator>
   </table>
 </div>
 <!-- 页脚-->
 <div class="bottom">
   <div class="footer-con"></div>
   <div class="footer-txt"></div>
+ <div id="dialog-confirm" title="清空回收站吗？">
+  <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>这些项目将被永久删除，并且无法恢复。您确定吗？</p>
+</div>
   </div>
 </body>
+    <!-- js -->
+    <!-- jQuery -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- jQuery-ui-->
+    <script src="jquery-ui-bootstrap/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="jquery-ui-bootstrap/js/demo.js"></script>
+    <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.wijmo-open.1.5.0.min.js"></script>
+    <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.mousewheel.min.js"></script>
+    <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.bgiframe-2.1.3-pre.js"></script>
+    <!--自定义js-->
+    <script src="js/QuerySuccess.js"></script>
 </html>

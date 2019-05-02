@@ -1,9 +1,9 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
-<%@ taglib prefix="s" uri="/struts-tags" %>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
+<!--<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>-->
+<!--<%@ taglib prefix="s" uri="/struts-tags" %>-->
+<!--<%-->
+<!--String path = request.getContextPath();-->
+<!--String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";-->
+<!--%>-->
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
@@ -74,7 +74,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </button>
     </span>
     </form>
-  </div>
+    </div>
 
 <!-- 查询结果表格 -->
     <div class="table" id="customers">
@@ -91,18 +91,26 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <th>备注</th>
     </tr>
     </thead>
-    <s:iterator value="#session.alltrainList">
         <tr id="tr1" class="alt">
-        <td><s:property value="TrainNumber"/></td>
-        <td><s:property value="DepStation"/> </td>
-        <td><s:property value="TerStation"/> </td>
-        <td><s:property value="LeaveTime"/></td>
-        <td><s:property value="ArrTime"/></td>
-        <td>有余票</td>
-        <td>￥60</td>
-        <td><button class="book_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" >
-        <span class="ui-button-text">预订</span></button></td>
-    </s:iterator>
+          <td>CTEST</td>
+          <td>GZN</td>
+          <td>ZHUHAI</td>
+          <td>10:00</td>
+          <td>11:30</td>
+          <td>有余票</td>
+          <td>60￥</td>
+          <td id="001"><button  class="book_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" >
+    <span class="ui-button-text">预订</span></button></td>
+        <tr id="tr1" class="alt">
+            <td>CTEST1</td>
+            <td>GZ1N</td>
+            <td>ZHU1HAI</td>
+            <td>11:00</td>
+            <td>11:30</td>
+            <td>有余票</td>
+            <td>有余票</td>
+            <td id="001"><button  class="book_btn ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" >
+                <span class="ui-button-text">预订</span></button></td>
   </table>
 </div>
 <!-- 页脚-->

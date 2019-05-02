@@ -11,17 +11,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <meta charset="UTF-8">
     <title>TrainticketSystem</title>
-    <!-- js -->
-      <!-- jQuery -->
-    <script src="js/jquery-3.3.1.js"></script>
-      <!-- jQuery-ui-->
-    <script src="jquery-ui-bootstrap/js/jquery-ui-1.9.2.custom.min.js"></script>
-    <script src="jquery-ui-bootstrap/js/demo.js"></script>
-      <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.wijmo-open.1.5.0.min.js"></script>
-      <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.mousewheel.min.js"></script>
-      <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.bgiframe-2.1.3-pre.js"></script>
-      <!--自定义js-->
-      <script src="js/index.js"></script>
     <!-- css -->
       <!-- 框架css -->
       <link rel="stylesheet" href="jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.0.custom.css">
@@ -37,7 +26,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       body{padding:0}
     </style>
   </head>
-  
 <body>
 <!-- wijmo start-->
 <div id="wijmo-container" class="container-fluid" style="padding:0">
@@ -55,7 +43,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </div>
 </div>
     <!-- wijmo end-->
-<!--标题栏-->
+<!--header-->
 <div class="header">
     <h1 id="title">BuyAndGo火车购票系统</h1>
 </div>
@@ -86,5 +74,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
   </div>
 </div>
+    <!-- js -->
+    <!-- jQuery -->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!-- jQuery-ui-->
+    <script src="jquery-ui-bootstrap/js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="jquery-ui-bootstrap/js/demo.js"></script>
+    <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.wijmo-open.1.5.0.min.js"></script>
+    <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.mousewheel.min.js"></script>
+    <script src="jquery-ui-bootstrap/third-party/wijmo/jquery.bgiframe-2.1.3-pre.js"></script>
+    <!--自定义js-->
   </body>
 </html>
