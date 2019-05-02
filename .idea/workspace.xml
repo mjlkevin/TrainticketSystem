@@ -1,7 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22c2f82a-6883-4075-8c8b-7da34d960dba" name="Default Changelist" comment="" />
+    <list default="true" id="22c2f82a-6883-4075-8c8b-7da34d960dba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/FontPage/LogRegSuccess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FontPage/LoginOut.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FontPage/OrderCenter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FontPage/css/OrderCenter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FontPage/css/slick.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FontPage/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FontPage/demo/validate-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FontPage/images/photo-1446770145316-10a05382c470.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FontPage/images/photo-1455717974081-0436a066bb96.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FontPage/images/photo-1477420086945-b99c643e8a3d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FontPage/js/slick.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FontPage/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/LogRegSuccess.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/LoginOut.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/OrderCenter.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/RegLogin-2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/RegLogin2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/UserInfoPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/css/LogRegSuccess.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/css/OrderCenter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/css/RegLogin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/css/dist/sidebar-menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/css/dist/sidebar-menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/css/index2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/jQuery基于Bootstrap的侧导航栏插件/assets/css/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/jQuery基于Bootstrap的侧导航栏插件/assets/css/jquery.mCustomScrollbar.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/jQuery基于Bootstrap的侧导航栏插件/assets/img/user.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/jQuery基于Bootstrap的侧导航栏插件/assets/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/jQuery基于Bootstrap的侧导航栏插件/assets/js/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/jQuery基于Bootstrap的侧导航栏插件/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/jQuery基于Bootstrap的侧导航栏插件/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/jQuery基于Bootstrap的侧导航栏插件/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/jQuery基于Bootstrap的侧导航栏插件/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/jQuery基于Bootstrap的侧导航栏插件/js/jquery-1.11.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebRoot/js/jquery.validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FontPage/RegLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/FontPage/RegLogin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FontPage/UserInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FontPage/UserInfoPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/FontPage/UserInfoPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FontPage/css/RegLogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/FontPage/css/RegLogin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FontPage/css/RegLoginFrame.css" beforeDir="false" afterPath="$PROJECT_DIR$/FontPage/css/RegLoginFrame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FontPage/css/index2.css" beforeDir="false" afterPath="$PROJECT_DIR$/FontPage/css/index2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FontPage/index(style-2).html" beforeDir="false" afterPath="$PROJECT_DIR$/FontPage/index(style-2).html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FontPage/jquery-ui-bootstrap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FontPage/jquery-ui-bootstrap/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FontPage/js/LogReg.js" beforeDir="false" afterPath="$PROJECT_DIR$/FontPage/js/LogReg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FontPage/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FontPage/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/QuerySuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/QuerySuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/RegLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/RegLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/UserInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/UserInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/action/RegLogAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/bean/DBCon.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/bean/DBCon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/bean/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/bean/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/struts.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/css/RegLoginFrame.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/css/RegLoginFrame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/css/UserInfo.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/css/UserInfo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/fail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/js/LogReg.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/js/LogReg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/rsuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebRoot/rsuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/action/RegLogAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/action/RegisterAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/DBCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/DBCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bean/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bean/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/struts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/struts.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,75 +82,123 @@
     <session id="618134876">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="3" />
-          <entry key="jsp" value="1" />
+          <entry key="css" value="19" />
+          <entry key="html" value="39" />
+          <entry key="js" value="10" />
+          <entry key="jsp" value="8" />
+          <entry key="scss" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="3" />
-          <entry key="JSP" value="1" />
+          <entry key="CSS" value="19" />
+          <entry key="HTML" value="39" />
+          <entry key="JSP" value="8" />
+          <entry key="JavaScript" value="10" />
+          <entry key="SCSS" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="28" />
-          <entry key="jsp" value="107" />
+          <entry key="css" value="759" />
+          <entry key="html" value="1455" />
+          <entry key="js" value="121" />
+          <entry key="jsp" value="220" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="28" />
-          <entry key="JSP" value="107" />
+          <entry key="CSS" value="759" />
+          <entry key="HTML" value="1455" />
+          <entry key="JSP" value="220" />
+          <entry key="JavaScript" value="121" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
+        <entry file="file://$PROJECT_DIR$/WebRoot/RegLogin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="19" column="42" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="42" />
+            <state relative-caret-position="-704">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FontPage/RegLogin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="25" column="70" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="70" />
               <folding>
-                <element signature="n#style#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#strong#0;n#td#0;n#tr#5;n#table#0;n#form#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#1;n#tr#5;n#table#0;n#form#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#td#2;n#tr#5;n#table#0;n#form#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebRoot/css/index.css">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FontPage/rsuccess.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1936">
-              <caret line="106" column="12" lean-forward="true" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+            <state relative-caret-position="154">
+              <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.0.custom.css">
+        <entry file="file://$PROJECT_DIR$/WebRoot/LogRegSuccess.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            <state relative-caret-position="594">
+              <caret line="78" column="6" lean-forward="true" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebRoot/css/LogRegSuccess.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/css/RegLogin.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>search_frame_ul</find>
+      <find>dialog-button</find>
+      <find>dialog</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,8 +207,31 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebRoot/index.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/css/index.css" />
+        <option value="$PROJECT_DIR$/FontPage/css/OrderCenter.css" />
+        <option value="$PROJECT_DIR$/FontPage/css/dist/sidebar-menu.css" />
+        <option value="$PROJECT_DIR$/FontPage/OrderCenter.html" />
+        <option value="$PROJECT_DIR$/FontPage/UserInfoPage.html" />
+        <option value="$PROJECT_DIR$/FontPage/LogRegSuccess.html" />
+        <option value="$PROJECT_DIR$/WebRoot/index.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/css/index2.css" />
+        <option value="$PROJECT_DIR$/FontPage/css/index2.css" />
+        <option value="$PROJECT_DIR$/FontPage/LoginOut.html" />
+        <option value="$PROJECT_DIR$/WebRoot/UserInfoPage.html" />
+        <option value="$PROJECT_DIR$/WebRoot/LogRegSuccess.html" />
+        <option value="$PROJECT_DIR$/WebRoot/OrderCenter.html" />
+        <option value="$PROJECT_DIR$/FontPage/index(style-2).html" />
+        <option value="$PROJECT_DIR$/FontPage/js/index.js" />
+        <option value="$PROJECT_DIR$/FontPage/jquery-ui-bootstrap/index.html" />
+        <option value="$PROJECT_DIR$/FontPage/css/RegLoginFrame.css" />
+        <option value="$PROJECT_DIR$/FontPage/js/LogReg.js" />
+        <option value="$PROJECT_DIR$/FontPage/demo/validate-demo.html" />
+        <option value="$PROJECT_DIR$/FontPage/css/RegLogin.css" />
+        <option value="$PROJECT_DIR$/WebRoot/RegLogin.html" />
+        <option value="$PROJECT_DIR$/WebRoot/RegLogin.jsp" />
+        <option value="$PROJECT_DIR$/FontPage/RegLogin.html" />
+        <option value="$PROJECT_DIR$/WebRoot/LogRegSuccess.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/css/LogRegSuccess.css" />
       </list>
     </option>
   </component>
@@ -103,17 +241,21 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="295" />
-    <option name="y" value="130" />
-    <option name="width" value="1555" />
-    <option name="height" value="840" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="58" />
+    <option name="y" value="148" />
+    <option name="width" value="1244" />
+    <option name="height" value="672" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,6 +266,17 @@
             <path>
               <item name="TrainticketSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrainticketSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="FontPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrainticketSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrainticketSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="FontPage" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TrainticketSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TrainticketSystem" type="462c0819:PsiDirectoryNode" />
               <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -136,35 +289,31 @@
               <item name="TrainticketSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="TrainticketSystem" type="462c0819:PsiDirectoryNode" />
               <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery-ui-bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrainticketSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrainticketSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery-ui-bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TrainticketSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TrainticketSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery-ui-bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="custom-theme" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/360Downloads/Software/jquery-svg-image-slider" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Personal\FinalDesign\TrainticketSystem\WebRoot\css" />
+      <recent name="E:\Personal\FinalDesign\TrainticketSystem\WebRoot\js" />
+      <recent name="E:\Personal\FinalDesign\TrainticketSystem\WebRoot" />
+      <recent name="E:\Personal\FinalDesign\TrainticketSystem\FontPage" />
+      <recent name="E:\Personal\FinalDesign\TrainticketSystem\FontPage\js" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -190,17 +339,29 @@
       <updated>1555308333440</updated>
       <workItem from="1555308334576" duration="1222000" />
       <workItem from="1555485088576" duration="2121000" />
+      <workItem from="1556020057986" duration="13000" />
+      <workItem from="1556364957758" duration="1197000" />
+      <workItem from="1556442875448" duration="41496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3343000" />
+    <option name="totallyTimeSpent" value="46049000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1058" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.164465" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16807166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -209,15 +370,34 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32896176" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32896176" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16807166" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32896176" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32896176" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -226,27 +406,293 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/WebRoot/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/jquery-ui-bootstrap/css/custom-theme/jquery-ui-1.10.0.custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
+        <state relative-caret-position="286">
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/css/dist/sidebar-menu.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/css/dist/sidebar-menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/OrderCenter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#tr#0;n#table#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#td#1;n#tr#0;n#table#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/UserInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/UserInfoPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="65" column="18" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/css/OrderCenter.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="104" column="20" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/jQuery基于Bootstrap的侧导航栏插件/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/css/dist/sidebar-menu.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/css/index2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="42" />
+        <state relative-caret-position="-1056">
+          <caret line="84" column="10" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
           <folding>
-            <element signature="n#style#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/css/index.css">
+    <entry file="file://$PROJECT_DIR$/FontPage/LogRegSuccess.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1936">
-          <caret line="106" column="12" lean-forward="true" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
+        <state relative-caret-position="-125">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/UserInfoPage.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/LoginOut.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="53" column="6" lean-forward="true" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/QuerySuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="n#span#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/OrderCenter.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="185" column="34" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/UserInfoPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/RegLogin-2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/css/RegLoginFrame.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="72" column="1" lean-forward="true" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/360Downloads/Software/jquery-svg-image-slider/js/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1085">
+          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/scss/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/jquery-ui-bootstrap/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="893" column="11" lean-forward="true" selection-start-line="893" selection-start-column="11" selection-end-line="893" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/css/RegLogin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="146" column="17" selection-start-line="146" selection-start-column="17" selection-end-line="146" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/js/LogReg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1085">
+          <caret line="122" column="18" lean-forward="true" selection-start-line="122" selection-start-column="18" selection-end-line="125" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/demo/validate-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#strong#0;n#td#0;n#tr#4;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#5;n#table#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/js/slick.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/index(style-2).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="98" column="13" lean-forward="true" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+          <folding>
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/RegLogin2.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2244" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/js/jquery.validate.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/RegLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-704">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/css/RegLogin.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/fail.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/rsuccess.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/css/index2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="40" column="22" selection-end-line="182" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FontPage/RegLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="70" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="70" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#strong#0;n#td#0;n#tr#5;n#table#0;n#form#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#1;n#tr#5;n#table#0;n#form#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#td#2;n#tr#5;n#table#0;n#form#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/LogRegSuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="78" column="6" lean-forward="true" selection-start-line="78" selection-start-column="6" selection-end-line="78" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/css/LogRegSuccess.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="48" column="23" lean-forward="true" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
         </state>
       </provider>
     </entry>
